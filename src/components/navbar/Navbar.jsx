@@ -55,7 +55,7 @@ const Navbar = ({ setIsAuthenticated }) => { // Accept setIsAuthenticated to man
       <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
         <Link to="/" className="logo d-flex align-items-center">
           <img src={logo} alt="Logo" />
-          <span>NeighborHood</span>
+          <span>Translation</span>
         </Link>
 
         <nav id="navbar" className={`navbar ${isMobileMenuOpen ? "navbar-mobile" : ""}`}>

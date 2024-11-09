@@ -10,15 +10,19 @@ const Footer = () => {
           <div className="container">
             <div className="row gy-4">
               <div className="col-lg-4 col-md-12 footer-info">
-                <Link
-                  to="/"
-                  className="logo d-flex align-items-center"
-                >
+                <Link to="/" className="logo d-flex align-items-center">
                   <img src={logo} alt="Logo" />
-                  <span>NeighborHood</span>
+                  <span>Translation</span>
                 </Link>
                 <p>
-                  Connect, Engage, Thrive: Your Neighborhood Awaits! encourages community members to come together, fostering meaningful connections and active participation. It highlights the importance of collaboration and support, inviting individuals to discover the rich experiences their neighborhood has to offer while building lasting relationships.
+                  Our Technology Startup eBhasha has created Artificial
+                  Intelligence (AI) powered Computer Aided Translation (CAT)
+                  Platform and Processes, that leverages Natural Language
+                  Processing (NLP) technology and Deep Learning, to
+                  assist/enable Professional Translators to produce Publishable
+                  Quality Content with minimal cognitive effort, and with far
+                  better Turn Around Time (TAT) thereby increasing the
+                  productivity.
                 </p>
               </div>
 
@@ -36,19 +40,20 @@ const Footer = () => {
                 </ul>
               </div>
 
-             
-
               <div className="col-lg-4 col-md-12 footer-contact text-center text-md-start">
                 <h4>Contact Us</h4>
                 <p>
-                  A108 Adam Street <br />
-                  New York, NY 535022
+                  <strong>Head Office</strong> - Hyderabad - eBhasha Setu Language Services Private
+                  Ltd. Vindhya C4, Second Floor, CIE, IIIT Hyderabad
+                  Campus,Gachibowli, Hyderabad-500032
                   <br />
-                  United States <br />
+                  <strong>Branch Office </strong> - Delhi NCR B 77-78, Sindhuja Building, 2nd
+                  Floor,
+                  Sector 6, Noida, UP 201301,India <br />
                   <br />
-                  <strong>Phone:</strong> +1 5589 55488 55
+                  <strong>Phone:</strong> +91 - 99664 43729 / +91-99680 36443
                   <br />
-                  <strong>Email:</strong> info@example.com
+                  <strong>Email:</strong> info@ebhashasetu.com / ebhashasetu@gmail.com
                   <br />
                 </p>
               </div>
@@ -60,13 +65,12 @@ const Footer = () => {
           <div className="copyright">
             &copy; Copyright{" "}
             <strong>
-              <span>NeighborHood</span>
+              <span>eBhasha Setu </span>
             </strong>
             . All Rights Reserved
           </div>
           <div className="credits">
-            Designed by{" "}
-            <Link to="https://avishkar.tech/">Avishkar</Link>
+            Designed by <Link to="https://ebhashasetu.com/">Ebhasha Setu Language Services Pvt Ltd</Link>
           </div>
         </div>
       </footer>
@@ -77,8 +81,7 @@ const Footer = () => {
       >
         <i className="bi bi-arrow-up-short"></i>
       </Link>
-
     </>
   );
-}
+};
 export default Footer;

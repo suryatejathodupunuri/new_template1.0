@@ -18,9 +18,9 @@ const ContactUs = () => {
                   <i className="bi bi-geo-alt"></i>
                   <h3>Address</h3>
                   <p>
-                    A108 Adam Street,
+                  Vindhya C4, Second Floor, CIE, 
                     <br />
-                    New York, NY 535022
+                    IIIT Hyderabad Campus,500032.
                   </p>
                 </div>
               </div>
@@ -29,9 +29,9 @@ const ContactUs = () => {
                   <i className="bi bi-telephone"></i>
                   <h3>Call Us</h3>
                   <p>
-                    +1 5589 55488 55
+                  +91 - 99664 43729 
                     <br />
-                    +1 6678 254445 41
+                  +91 - 99680 36443
                   </p>
                 </div>
               </div>
@@ -40,9 +40,9 @@ const ContactUs = () => {
                   <i className="bi bi-envelope"></i>
                   <h3>Email Us</h3>
                   <p>
-                    info@example.com
+                  info@ebhashasetu.com 
                     <br />
-                    contact@example.com
+                  ebhashasetu@gmail.com
                   </p>
                 </div>
               </div>
@@ -51,7 +51,7 @@ const ContactUs = () => {
                   <i className="bi bi-clock"></i>
                   <h3>Open Hours</h3>
                   <p>
-                    Monday - Friday
+                    Monday - Saturday
                     <br />
                     9:00 AM - 05:00 PM
                   </p>
