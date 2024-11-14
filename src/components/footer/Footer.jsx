@@ -31,11 +31,11 @@ const Footer = () => {
                 <ul>
                   <li>
                     <i className="bi bi-chevron-right"></i>{" "}
-                    <Link to="#">Home</Link>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>{" "}
-                    <Link to="#">About us</Link>
+                    <Link to="/trynow">Try Now</Link>
                   </li>
                 </ul>
               </div>

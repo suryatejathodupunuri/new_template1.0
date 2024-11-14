@@ -19,7 +19,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "./components/navbar/Navbar.jsx";
 import Home from "./components/homeLanding/Home.jsx";
 import Footer from "./components/footer/Footer.jsx";
-import About from "./components/about/About.jsx";
+import Trynow from "./components/trynow/Trynow.jsx";
 import ContactUs from "./components/contactUs/ContactUs.jsx";
 import Signup from "./components/signup/Signup.jsx";
 import Login from "./components/login/Login.jsx";
@@ -54,7 +54,7 @@ const App = () => {
         
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/trynow" element={<Trynow/>} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />

@@ -71,11 +71,11 @@ const Navbar = ({ setIsAuthenticated }) => { // Accept setIsAuthenticated to man
             </li>
             <li>
               <Link 
-                to="/about" 
-                className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`} 
+                to="/trynow" 
+                className={`nav-link ${location.pathname === '/Trynow' ? 'active' : ''}`} 
                 onClick={handleLinkClick}
               >
-                About
+                Try Now
               </Link>
             </li>
             {/* Uncomment the following block for dropdown functionality 
