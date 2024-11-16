@@ -11,8 +11,8 @@ const Home = () => {
         <section id="services" className="services">
           <div className="container" data-aos="fade-up">
             <header className="section-header">
-              <h2>Our Services</h2>
-              <p>Explore what we offer to enhance your journey with us</p>
+              <h2>Features</h2>
+              <p>Access various languages with our intuitive tool for precise communication.</p>
             </header>
 
             <div className="row gy-4">
