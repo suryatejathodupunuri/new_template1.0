@@ -1,32 +1,32 @@
 [
   {
     "color": "blue",
-    "title": "Scalable",
-    "description": "Experience the power of scalability with our Translation Plugin. Our platform is designed to grow alongside your needs, ensuring that you can seamlessly handle translation tasks ."
+    "title": "Computer Aided Translation (CAT)",
+    "description": "Boost your translation productivity with our AI-powered CAT tools, designed to enhance accuracy and streamline workflows for professional translators."
   },
   {
     "color": "orange",
-    "title": "Events and Activities",
-    "description": "Participate in engaging events, workshops, and webinars tailored to enrich your knowledge and skills across diverse fields."
+    "title": "Natural Language Processing (NLP)",
+    "description": "Leverage advanced NLP technology for smarter, context-aware translations, enabling more natural and precise language handling."
   },
   {
     "color": "green",
-    "title": "Contribute and Collaborate",
-    "description": "Your voice matters! Contribute by hosting events, sharing insights, or participating in community initiatives to make a difference."
+    "title": "Deep Learning",
+    "description": "Our Deep Learning models continuously improve translation quality, adapting to language nuances for contextually accurate and refined results.  "
   },
   {
     "color": "red",
-    "title": "Stay Informed",
-    "description": "Subscribe to our newsletter and follow our social media for the latest updates on upcoming events and community news."
+    "title": "Better Turnaround Time (TAT)",
+    "description": "Achieve faster project delivery with our tools that reduce translation time without compromising on quality or accuracy."
   },
   {
     "color": "purple",
-    "title": "Global Reach",
-    "description": "Our community is global, bringing together members from all corners of the world. Engage in online events accessible to everyone."
+    "title": "Publishable Quality Content",
+    "description": "Ensure your translations meet professional standards with quality checks and style enhancements, ready for publication."
   },
   {
     "color": "pink",
-    "title": "Feedback and Support",
-    "description": "We value your feedback! Reach out with your thoughts or questions, and our support team will be happy to assist you."
+    "title": "7 + Years of Experience",
+    "description": "Benefit from over 7 plus years of expertise in AI and translation technology, driving innovation and efficiency in every project."
   }
 ]
