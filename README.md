@@ -1,3 +1,4 @@
+# **EBS Translation Front-End Application (New Responsive Template)**
 ## Installation
 Follow these steps to run the project.
 
@@ -31,11 +32,13 @@ Follow these steps to run the project.
      npm install react-toastify
      ```
 
-6. **Run the Project:**
+6. **Run the Project and move build to index.html**
    - Start the development server:
      ```bash
      npm run build
      ```
-     
-  
+7. **Enable route so that refresh isssue is not faced**
+
+8. For backend functionality, please refer to [EBS Translation Backend Repository](https://github.com/suryatejathodupunuri/ebs.translation.backend).
+   **1/final branch is live now**
   ---
