@@ -40,5 +40,5 @@ Follow these steps to run the project.
 7. **Enable route so that refresh isssue is not faced**
 
 8. For backend functionality, please refer to [EBS Translation Backend Repository](https://github.com/suryatejathodupunuri/ebs.translation.backend).
-   **1/final branch is live now**
+   **(1/final branch is live now)**
   ---
