@@ -10,7 +10,7 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [contactNo, setContactNo] = useState("");
-  const [houseNo, setHouseNo] = useState("");
+  
   const [location, setLocation] = useState({ type: "Point", coordinates: [0, 0] });
   const [type, setType] = useState("user");
   const [errors, setErrors] = useState({});
@@ -42,10 +42,7 @@ const Signup = () => {
       newErrors.contactNo = "Contact number is required";
       valid = false;
     }
-    if (!houseNo) {
-      newErrors.houseNo = "House number is required";
-      valid = false;
-    }
+    
 
     setErrors(newErrors);
     return valid;
@@ -60,7 +57,6 @@ const Signup = () => {
         email, 
         password, 
         contact_no: contactNo, 
-        house_no: houseNo, 
         location, 
         type 
       })
@@ -148,17 +144,7 @@ const Signup = () => {
                     />
                     {errors.contactNo && <div className="invalid-feedback">{errors.contactNo}</div>}
                   </div>
-                  <div className="col-md-12">
-                    <input
-                      type="text"
-                      className={`form-control ${errors.houseNo && "is-invalid"}`}
-                      placeholder="Your House Number"
-                      value={houseNo}
-                      onChange={(e) => setHouseNo(e.target.value)}
-                      required
-                    />
-                    {errors.houseNo && <div className="invalid-feedback">{errors.houseNo}</div>}
-                  </div>
+                  
                   <div className="col-md-12 text-center">
                     <button type="submit">Signup</button>
                   </div>
