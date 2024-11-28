@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="col-lg-4 col-md-12 footer-info">
                 <Link to="/" className="logo d-flex align-items-center">
                   <img src={logo} alt="Logo" />
-                  <span>Translation</span>
+                  <span>Transliteration</span>
                 </Link>
                 <p>
                   Our Technology Startup eBhasha has created Artificial

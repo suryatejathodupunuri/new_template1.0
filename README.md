@@ -1,4 +1,4 @@
-# **EBS Translation Front-End Application (New Responsive Template)**
+# **EBS Transliteration Front-End Application (New Responsive Template)**
 ## Installation
 Follow these steps to run the project.
 
@@ -39,6 +39,6 @@ Follow these steps to run the project.
      ```
 7. **Enable route so that refresh isssue is not faced**
 
-8. For backend functionality, please refer to [EBS Translation Backend Repository](https://github.com/suryatejathodupunuri/ebs.translation.backend).
+8. For backend functionality, please refer to [EBS Transliteration Backend Repository](https://github.com/suryatejathodupunuri/ebs_transliteration_backend.git).
    **(1/final branch is live now)**
   ---

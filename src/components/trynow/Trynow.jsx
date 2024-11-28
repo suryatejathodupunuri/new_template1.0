@@ -15,31 +15,25 @@ const Trynow = () => {
   const [outputLang, setOutputLang] = useState("");
   const [fileContent, setFileContent] = useState("");
   const [responseData, setResponseData] = useState("");
-  const isUrdu = inputLang === "ur" || inputLang === "ks" || inputLang === "sd";
-  const isUrdu_o =
-    outputLang === "ur" || outputLang === "ks" || outputLang === "sd";
+  const isUrdu = inputLang === "urd";
+  const isUrdu_o = outputLang === "urd";
   const langMap = {
-    as: "Assamese",
-    bn: "Bengali",
-    brx: "Bodo",
-    doi: "Dogri",
-    en: "English",
-    gu: "Gujarati",
-    hi: "Hindi",
-    ks: "Kashmiri",
-    kn: "Kannada",
-    gom: "Konkani",
-    ml: "Malayalam",
-    mai: "Maithili",
-    mr: "Marathi",
-    ne: "Nepali",
-    or: "Oriya",
-    pa: "Punjabi",
-    sa: "Sanskrit",
-    sd: "Sindhi",
-    ta: "Tamil",
-    te: "Telugu",
-    ur: "Urdu",
+    asm: "Assamese",
+    ben: "Bengali",
+    bod: "Bodo",
+    guj: "Gujarati",
+    hin: "Hindi",
+    kan: "Kannada",
+    kok: "Konkani",
+    mal: "Malayalam",
+    mar: "Marathi",
+    nep: "Nepali",
+    ori: "Oriya",
+    pan: "Punjabi",
+    eng: "Roman(ENG)",
+    tam: "Tamil",
+    tel: "Telugu",
+    urd: "Urdu",
   };
 
   const handleLangSelect = (eventKey, isInput) => {
@@ -59,6 +53,10 @@ const Trynow = () => {
       toast.error("Source and Target Languages cannot be same.");
       return;
     }
+    if (fileContent.length === 4999) {
+      toast.error("File content exceeds 5000 characters limit.");
+      return;
+    }
     if (fileContent === "") {
       toast.error("Please enter Source text");
       return;
@@ -67,7 +65,7 @@ const Trynow = () => {
     }
 
     try {
-      const response = await fetch(url + "translation", {
+      const response = await fetch(url + "transliterate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -246,19 +244,19 @@ const Trynow = () => {
           <Row className="mt-4 text-center">
             {[
               {
-                label: "Sample English",
-                langCode: "en",
-                content: "Welcome to Translation system.",
+                label: "Sample Roman",
+                langCode: "eng",
+                content: "Transliteration system main aap kaa swaagat hai",
               },
               {
                 label: "Sample Hindi",
-                langCode: "hi",
-                content: "स्वागत है अनुवाद प्रणाली में।",
+                langCode: "hin",
+                content: "ट्रांसलिट्रेशन सिस्टम मैं आप का स्वागत हैं। ",
               },
               {
                 label: "Sample Urdu",
-                langCode: "ur",
-                content: "خوش آمدید ترجمہ سسٹم میں۔",
+                langCode: "urd",
+                content: "ٹرانسلٹیریشن سسٹم میں آپ کا سواگت ہے.",
               },
             ].map(({ label, langCode, content }) => (
               <Col xs="auto" key={label} className="mb-2">
