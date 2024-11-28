@@ -10,8 +10,9 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [contactNo, setContactNo] = useState("");
-  
+  // eslint-disable-next-line
   const [location, setLocation] = useState({ type: "Point", coordinates: [0, 0] });
+  // eslint-disable-next-line
   const [type, setType] = useState("user");
   const [errors, setErrors] = useState({});
 

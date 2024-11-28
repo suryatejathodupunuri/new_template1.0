@@ -115,7 +115,7 @@ const Trynow = () => {
                 drop="down"
                 className="me-2 btn-sm"
               >
-                <div style={{ maxHeight: "500px", overflowY: "auto" }}>
+                <div style={{ maxHeight: "550px", overflowY: "auto" }}>
                   {Object.entries(langMap).map(([key, value]) => (
                     <Dropdown.Item key={key} eventKey={key}>
                       {value}
@@ -154,7 +154,7 @@ const Trynow = () => {
                 drop="down"
                 className="btn-sm"
               >
-                <div style={{ maxHeight: "500px", overflowY: "auto" }}>
+                <div style={{ maxHeight: "550px", overflowY: "auto" }}>
                   {Object.entries(langMap).map(([key, value]) => (
                     <Dropdown.Item key={key} eventKey={key}>
                       {value}
@@ -193,7 +193,7 @@ const Trynow = () => {
               <Form.Control
                 as="textarea"
                 rows={20}
-                placeholder="Translated text will appear here upon clicking submit."
+                placeholder="Transliterated text will appear here upon clicking submit."
                 maxLength="5000"
                 style={{
                   minHeight: "150px", // Smaller height for mobile
