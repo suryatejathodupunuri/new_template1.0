@@ -29,31 +29,38 @@ const Footer = () => {
               <div className="col-lg-3 col-6 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
-                    <Link to="/">Home</Link>
-                  </li>
-                  <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
-                    <Link to="/trynow">Try Now</Link>
-                  </li>
-                </ul>
+  <li onClick={() => {
+    window.location.href = '/';
+    window.scrollTo(0, 0);
+  }}>
+    <i className="bi bi-chevron-right"></i>{" "}
+    <Link to="/">Home</Link>
+  </li>
+  
+  <li onClick={() => {
+    window.location.href = '/trynow';
+    window.scrollTo(0, 0);
+  }}>
+    <i className="bi bi-chevron-right"></i>{" "}
+    <Link to="/trynow">Try Now</Link>
+  </li>
+</ul>
               </div>
 
               <div className="col-lg-4 col-md-12 footer-contact text-center text-md-start">
                 <h4>Contact Us</h4>
                 <p>
-                  <strong>Head Office</strong> - Hyderabad - eBhasha Setu Language Services Private
-                  Ltd. Vindhya C4, Second Floor, CIE, IIIT Hyderabad
-                  Campus,Gachibowli, Hyderabad-500032
+                  <strong>Head Office</strong> - Hyderabad - eBhasha Setu
+                  Language Services Private Ltd. Vindhya C4, Second Floor, CIE,
+                  IIIT Hyderabad Campus,Gachibowli, Hyderabad-500032
                   <br />
-                  <strong>Branch Office </strong> - Delhi NCR B 77-78, Sindhuja Building, 2nd
-                  Floor,
-                  Sector 6, Noida, UP 201301,India <br />
+                  <strong>Branch Office </strong> - Delhi NCR B 77-78, Sindhuja
+                  Building, 2nd Floor, Sector 6, Noida, UP 201301,India <br />
                   <br />
                   <strong>Phone:</strong> +91 - 99664 43729 / +91-99680 36443
                   <br />
-                  <strong>Email:</strong> info@ebhashasetu.com / ebhashasetu@gmail.com
+                  <strong>Email:</strong> info@ebhashasetu.com /
+                  ebhashasetu@gmail.com
                   <br />
                 </p>
               </div>
@@ -70,7 +77,10 @@ const Footer = () => {
             . All Rights Reserved
           </div>
           <div className="credits">
-            Designed by <Link to="https://ebhashasetu.com/">Ebhasha Setu Language Services Pvt Ltd</Link>
+            Designed by{" "}
+            <Link to="https://ebhashasetu.com/">
+              Ebhasha Setu Language Services Pvt Ltd
+            </Link>
           </div>
         </div>
       </footer>
