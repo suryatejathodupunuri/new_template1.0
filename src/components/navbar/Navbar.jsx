@@ -27,6 +27,7 @@ const Navbar = ({ setIsAuthenticated }) => { // Accept setIsAuthenticated to man
 
   // Close mobile menu on link click
   const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     setMobileMenuOpen(false);
   };
 

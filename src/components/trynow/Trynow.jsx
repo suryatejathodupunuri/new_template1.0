@@ -234,44 +234,58 @@ const Trynow = () => {
               >
                 Clear
               </Button>
-              <Button variant="primary" onClick={handleSubmit}>
+              <Button variant="primary" onClick={handleSubmit}style={{
+    backgroundColor: '#1fbaec', // Blue color
+    borderColor: '#1fbaec',
+    color: '#FFFFFF', // White text
+    fontWeight: '600',
+    
+  }}>
                 Submit{" "}
               </Button>
             </Col>
           </Row>
 
           {/* Sample Buttons */}
-          <Row className="mt-4 text-center">
-            {[
-              {
-                label: "Sample Roman",
-                langCode: "eng",
-                content: "Transliteration system main aap kaa swaagat hai",
-              },
-              {
-                label: "Sample Hindi",
-                langCode: "hin",
-                content: "ट्रांसलिट्रेशन सिस्टम मैं आप का स्वागत हैं। ",
-              },
-              {
-                label: "Sample Urdu",
-                langCode: "urd",
-                content: "ٹرانسلٹیریشن سسٹم میں آپ کا سواگت ہے.",
-              },
-            ].map(({ label, langCode, content }) => (
-              <Col xs="auto" key={label} className="mb-2">
-                <Button
-                  variant="primary"
-                  onClick={() => {
-                    setFileContent(content);
-                    setInputLang(langCode);
-                  }}
-                >
-                  {label}
-                </Button>
-              </Col>
-            ))}
-          </Row>
+<Row className="mt-4 text-center">
+  {[
+    {
+      label: "Sample Roman",
+      langCode: "eng", 
+      content: "Transliteration system main aap kaa swaagat hai",
+    },
+    {
+      label: "Sample Hindi",
+      langCode: "hin",
+      content: "ट्रांसलिट्रेशन सिस्टम मैं आप का स्वागत हैं। ",
+    },
+    {
+      label: "Sample Urdu", 
+      langCode: "urd",
+      content: "ٹرانسلٹیریشن سسٹم میں آپ کا سواگت ہے.",
+    },
+  ].map(({ label, langCode, content }) => (
+    <Col xs="auto" key={label} className="mb-2">
+      <Button
+        variant="primary"
+        onClick={() => {
+          setFileContent(content);
+          setInputLang(langCode);
+        }}
+        style={{
+          backgroundColor: '#1fbaec', // Your teal color
+          borderColor: '#1fbaec',
+          color: '#FFFFFF', // White text
+          fontWeight: '600',
+          minWidth: '120px',
+        }}
+        className="hover-effect" // For hover styles (add to CSS)
+      >
+        {label}
+      </Button>
+    </Col>
+  ))}
+</Row>
         </div>
       </section>
     </main>
