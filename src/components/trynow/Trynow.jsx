@@ -9,8 +9,11 @@ import {
 } from "react-bootstrap";
 import { toast } from "react-toastify";
 import { url } from "../../creds";
+import { useNavigate } from "react-router-dom";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Trynow = () => {
+  const navigate = useNavigate();
   const [inputLang, setInputLang] = useState("");
   const [outputLang, setOutputLang] = useState("");
   const [fileContent, setFileContent] = useState("");
@@ -101,6 +104,28 @@ const Trynow = () => {
             className="align-items-center mb-4 flex-wrap justify-content-center"
             style={{ flexWrap: "wrap" }}
           >
+            {/* New File Icon Button */}
+            <Col xs="auto" className="me-2 mb-2 mb-md-0">
+              <Button
+                variant="light"
+                className="border"
+                onClick={() => navigate("/trynow/files")}
+                style={{
+                  width: "38px",
+                  height: "38px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  padding: 0,
+                }}
+              >
+                <i
+                  className="bi bi-file-earmark"
+                  style={{ fontSize: "1.2rem" }}
+                ></i>
+              </Button>
+            </Col>
+
             <Col
               xs="auto"
               md="auto"
@@ -181,7 +206,7 @@ const Trynow = () => {
                   fontFamily: isUrdu
                     ? "Nafees Web Naskh, sans-serif"
                     : "inherit",
-                }} // Adjust height for mobile
+                }}
                 value={fileContent}
                 onChange={(e) => setFileContent(e.target.value)}
               />
@@ -196,20 +221,17 @@ const Trynow = () => {
                 placeholder="Transliterated text will appear here upon clicking submit."
                 maxLength="5000"
                 style={{
-                  minHeight: "150px", // Smaller height for mobile
-                  maxHeight: "300px", // Max height for mobile
+                  minHeight: "150px",
+                  maxHeight: "300px",
                   direction: isUrdu_o ? "rtl" : "ltr",
                   fontSize: "20px",
                   fontFamily: isUrdu_o
                     ? "Nafees Web Naskh, sans-serif"
                     : "inherit",
-
                   "@media (min-width: 768px)": {
-                    // Increase height for tablets and larger devices
                     minHeight: "250px",
                   },
                   "@media (min-width: 1200px)": {
-                    // Further increase for desktops
                     minHeight: "600px",
                   },
                 }}
@@ -234,58 +256,61 @@ const Trynow = () => {
               >
                 Clear
               </Button>
-              <Button variant="primary" onClick={handleSubmit}style={{
-    backgroundColor: '#1fbaec', // Blue color
-    borderColor: '#1fbaec',
-    color: '#FFFFFF', // White text
-    fontWeight: '600',
-    
-  }}>
+              <Button
+                variant="primary"
+                onClick={handleSubmit}
+                style={{
+                  backgroundColor: "#1fbaec",
+                  borderColor: "#1fbaec",
+                  color: "#FFFFFF",
+                  fontWeight: "600",
+                }}
+              >
                 Submit{" "}
               </Button>
             </Col>
           </Row>
 
           {/* Sample Buttons */}
-<Row className="mt-4 text-center">
-  {[
-    {
-      label: "Sample Roman",
-      langCode: "eng", 
-      content: "Transliteration system main aap kaa swaagat hai",
-    },
-    {
-      label: "Sample Hindi",
-      langCode: "hin",
-      content: "ट्रांसलिट्रेशन सिस्टम मैं आप का स्वागत हैं। ",
-    },
-    {
-      label: "Sample Urdu", 
-      langCode: "urd",
-      content: "ٹرانسلٹیریشن سسٹم میں آپ کا سواگت ہے.",
-    },
-  ].map(({ label, langCode, content }) => (
-    <Col xs="auto" key={label} className="mb-2">
-      <Button
-        variant="primary"
-        onClick={() => {
-          setFileContent(content);
-          setInputLang(langCode);
-        }}
-        style={{
-          backgroundColor: '#1fbaec', // Your teal color
-          borderColor: '#1fbaec',
-          color: '#FFFFFF', // White text
-          fontWeight: '600',
-          minWidth: '120px',
-        }}
-        className="hover-effect" // For hover styles (add to CSS)
-      >
-        {label}
-      </Button>
-    </Col>
-  ))}
-</Row>
+          <Row className="mt-4 text-center">
+            {[
+              {
+                label: "Sample Roman",
+                langCode: "eng",
+                content: "Transliteration system main aap kaa swaagat hai",
+              },
+              {
+                label: "Sample Hindi",
+                langCode: "hin",
+                content: "ट्रांसलिट्रेशन सिस्टम मैं आप का स्वागत हैं। ",
+              },
+              {
+                label: "Sample Urdu",
+                langCode: "urd",
+                content: "ٹرانسلٹیریشن سسٹم میں آپ کا سواگت ہے.",
+              },
+            ].map(({ label, langCode, content }) => (
+              <Col xs="auto" key={label} className="mb-2">
+                <Button
+                  variant="primary"
+                  onClick={() => {
+                    setFileContent(content);
+                    setInputLang(langCode);
+                  }}
+                  style={{
+                    backgroundColor: "#1fbaec",
+                    borderColor: "#1fbaec",
+                    color: "#FFFFFF",
+                    fontWeight: "600",
+                    minWidth: "120px",
+                  }}
+                  className="hover-effect"
+                >
+                  {label}
+                </Button>
+              </Col>
+            ))}
+          </Row>
         </div>
       </section>
     </main>
