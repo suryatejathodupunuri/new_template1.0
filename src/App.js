@@ -25,7 +25,6 @@ import Signup from "./components/signup/Signup.jsx";
 import Login from "./components/login/Login.jsx";
 import Dashboard from "./components/dashboard/Dashboard.jsx"; // Import the new Dashboard component
 import ProtectedRoute from "./components/login/ProtectedRoute.jsx"; // Import the ProtectedRoute component
-import TryNowFiles from "./components/trynow/Trynowfiles";
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false); // Track login status
 
@@ -55,7 +54,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/trynow" element={<Trynow/>} />
-          <Route path="/trynow/files" element={<TryNowFiles/>} />
 
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/signup" element={<Signup />} />
